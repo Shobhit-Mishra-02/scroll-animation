@@ -19,11 +19,11 @@ const Box = () => {
   return (
     <div ref={ref} className="relative">
       <div
-        className={
+        className={`text-4xl w-[300px] h-[300px] rounded-md bg-blue-500 text-white flex justify-center align-middle items-center transition-all ease-in-out ${
           isCompView
-            ? `text-4xl w-[300px] h-[300px] rounded-md bg-blue-500 text-white flex justify-center align-middle items-center transition-all ease-in-out translate-x-0 opacity-100 duration-700 scale-100`
-            : `text-4xl w-[300px] h-[300px] rounded-md bg-blue-500 text-white flex justify-center align-middle items-center transition-all ease-in-out translate-x-full duration-700 opacity-0 scale-0`
-        }
+            ? "translate-x-0 opacity-100 scale-100"
+            : "translate-x-full opacity-0 scale-0"
+        }  duration-700`}
       >
         <span>BOX</span>
       </div>
